@@ -28,6 +28,7 @@
     .swiper-container {
       width: 100%;
       height: 100%;
+      position: relative;
     }
 
     .swiper-slide {
@@ -57,8 +58,43 @@
       align-items: center;
     }
 
+
+
+    .bullet {
+      background: white;
+    }
+
+    .title {
+      width: 100%;
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title>div {
+      width: 40px;
+    }
+
+    .title>p {
+      color: white;
+      letter-spacing: 3px;
+      /* font-weight: bold; */
+      font-size: 16px;
+    }
+
+    .title>p>span {
+      color: white;
+      letter-spacing: 3px;
+      /* font-weight: bold; */
+      font-size: 10px;
+    }
+
     .card {
-      width: 80%;
+      width: 300px;
       border-radius: 10px;
       height: 200px;
       background: #424242;
@@ -67,10 +103,19 @@
       -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
       -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
 
-    .bullet {
-      background: white;
+    .card>div {
+      width: 60px;
+    }
+
+    .card>p {
+      color: white;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -78,25 +123,41 @@
 <body>
   <!-- Swiper -->
   <div class="swiper-container">
+    <div class="title">
+      <div>
+        <img width="100%" src="./heart.svg" alt="">
+      </div>
+      <p>咖寶專用 <span>(使用期限：3657/01/01)</span></p>
+    </div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="cardContainer">
           <div class="card">
-
+            <div>
+              <img width="100%" src="./tshirt.svg" alt="">
+            </div>
+            <p>衣服卡</p>
           </div>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="cardContainer">
           <div class="card">
-
+            <div>
+              <img width="100%" src="./shirt.svg" alt="">
+            </div>
+            <p>外套卡</p>
           </div>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="cardContainer">
           <div class="card">
-
+            <div>
+              <img width="100%" src="./pants.svg" alt="">
+            </div>
+            <p>褲子卡
+            </p>
           </div>
         </div>
       </div>
